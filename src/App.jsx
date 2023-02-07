@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import io from "socket.io-client";
 
-const socket = io.connect("socketio-demo-server-production.up.railway.app");
+const socket = io.connect(
+  "http://socketio-demo-server-production.up.railway.app"
+);
 function App() {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
