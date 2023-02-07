@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import io from "socket.io-client";
 
-const socket = io.connect("44.226.122.3");
+const socket = io.connect("https://demo-socket-io.onrender.com");
 function App() {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
