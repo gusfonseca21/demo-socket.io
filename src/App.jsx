@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import io from "socket.io-client";
 
-const socket = io.connect(
-  "https://0f1f-2804-14c-65d5-6e4a-6d7c-ca1d-3ddb-7e38.sa.ngrok.io"
-);
+const socket = io.connect("http://localhost:3001");
 function App() {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
